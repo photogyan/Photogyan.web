@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: fit-content(20em);
+    background-image: linear-gradient(to right, #000000,#808080);
+    background-blend-mode: color;
+    background-position: center;
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff00;
+    z-index: 999;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    transition: text-color 0.3s ease;  
+    transition: transform 0.5s;     
+}
+nav ul li a {
+    font-weight:bold ;
+    color:whitesmoke;
+    font-size: 16px;
+    transition: text-color 0.3s ease;
+    transition: transform 0.5s; 
+}
+nav ul li :hover{
+    color: #fc0404;
+    transform: translateY(-10px);
+}
+.active, .navbar ul li a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.active, .navbar ul li a :hover
+{
+    background: transparent;
+    border-radius: 3px;
+}
+
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(top to right, #000000,#808080);
+
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col1{
+    flex-basis: 50%;
+    
+}
+.col2{
+    flex-basis: 50%;
+    background-image: url(Image/Camera\ Man.png);
+    background-size: cover;
+    Back
+}
+.col2 h1{
+    color:white;
+    font-size: 50px;
+    transition: transform, 0,3s;
+    transition: text color, 0.3s, ease;
+}
+.col2 h1 :hover{
+    color: royalblue;
+    transform: translateY(-10px);
+}
+
+.col2 h2{
+    color: red;
+    font-size: 30px;
+}
+.col2 p{
+    color:whitesmoke;
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 70px;
+    font-weight: bold;
+}
+.form-box{
+    width: 350px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: linear-gradient(to right, #808080, #000000);
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #818181;
+    
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 10px #3d3c3c;
+    border-radius: 30px;
+    
+
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+
+}
+#btn{
+    top: 0;
+    left: 0;
+    position:absolute;
+    Width: 110px;
+    height: 100%;
+    background: linear-gradient(to left, #fff,#fc0404);
+    border-radius: 30px;
+    transition: 0.5s;
+    box-shadow: 0 0 5px #3d3c3c;
+    
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left:0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff00;
+    background: #818181;
+    color: #fff;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to left, #fff,#fc0404);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #b9b3b3;
+
+}
+.checkbox{
+    margin: 30px 10px 30px 0;
+
+}
+span{
+    color: #fc0404;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+    
+}
+#Login{
+    left: 50px;
+}
+#Register{
+    left: 450px;
+}
+footer {
+    padding: 20px;
+    background-color: transparent;
+}
+  
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+  
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+  
+.social-icons img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+p {
+    flex: 1;
+    margin: 0;
+}
+  
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
+    color: #333;
+    font-size: 24px;
+}

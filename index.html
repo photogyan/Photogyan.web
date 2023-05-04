@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device=width", initial="scale=1.0">
+    <title>Photogyan landing page</title>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <a href="index.html">
+                    <img src="Image/Logowhite.png" class="logo">
+                    </a>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="settings.html">Settings</a></li>    
+                        <li><a href="Locations.html">Locations</a></li>
+                        <li><a href="#">Gears</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <br>
+        
+        <div class="row">
+            <div class="col">
+                <h2>Take Your </h2>
+                <h1>फोटोGRAPHY </h1> 
+                <h2 style="font-size: 3vw;">to the Next Level with Our Expert Tutorials.</h2>
+                <p> If you are looking at photography as a carrier or hobby, we got you covered. We have gathered information and techniques from the world's top creators and gathered them to meet your needs in your way. Let’s explore what we have got for you.</p>
+                <h2>Choose your Path. You Are A?</h2>
+                <a href="learnBasics.html">
+                <button type="button">Beginner.</button>
+                </a>
+
+                <a href="advance.html">
+                <button type="button">Profesional</button>
+                </a>
+                <p>* NO Credit Cards Required for Signup</p>
+            </div>
+
+            <div class="col"><a href="#" class="card1-link"><div class="card card1"></div></div>
+        </div>
+        
+        <footer>
+            <div class="footer-wrapper">
+              <div class="social-icons">
+                <a href="#"><img src="Image/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Image/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="Image/youtube.png" alt="YouTube"></a>
+              </div>
+              <p>&copy; Photogyan All rights reserved | Designed and Created by | Akshay Kumar Mohanty</p>
+            </div>
+        </footer>
+
+    </div>
+    
+<style>
+    *{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif,'Courier New', Courier, monospace;
+}
+.container{
+    width: 100%;
+    height: fit-content(20em);
+    background-image: linear-gradient(to right, #000000,#28282b);
+    background-blend-mode: color;
+    background-position: center;
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff00;
+    z-index: 1;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+.navbar{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    text-decoration: none; 
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    transition: text-color 0.3s ease;  
+    transition: transform 0.5s;
+        
+}
+nav ul li a {
+    font-weight:bold ;
+    color:whitesmoke;
+    font-size: 16px;
+    text-decoration: none; 
+    transition: text-color 0.3s ease;
+    transition: transform 0.5s; 
+}
+nav ul li :hover{
+    color: #fc0404;
+    transform: translateY(-10px);
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color:white;
+    font-size: 80px;
+    transition: transform 0,3s;
+    transition: text color 0.3s ease;
+}
+col h1 :hover{
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+h2{
+    color:whitesmoke;
+    font-size: 30px;
+}
+.col p{
+    color:whitesmoke;
+    font-size: 19px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 70px;
+    
+}
+button {
+    background: linear-gradient(to left, #fff,#fc0404);
+    color: black;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 30px;
+    width: 180px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  
+  button:hover {
+    background: linear-gradient(to left, #fc0404, #fff);
+    transform: translateY(-10px);
+    color: azure;
+    box-shadow: 4px 4px 16px rgba(235, 86, 60, 0.4);
+    
+  }
+  
+.card{
+    width: 480px;
+    height: 490px;
+    display: inline-block;
+    border-top-left-radius: 18% 30%;
+    border-top-right-radius: 20% 50%;
+    border-bottom-left-radius: 20% 50%;
+    border-bottom-right-radius: 18% 30%;
+    border: 1px var(--white);
+    padding: 15px 25px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(Image/main3.png);
+}
+.card2{
+    background-image: url(Image/2.png);
+}
+.card3{
+    background-image: url(Image/3.png);
+}
+.card4{
+    background-image: url(Image/4.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    
+}
+.card p{
+    color: red;
+    text-shadow: 0 0 15px #050000;
+    font-size: 8px;
+}
+footer {
+    padding: 20px;
+    background-color: #33333300;
+}
+  
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+  
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+  
+.social-icons img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.footer p {
+    flex: 1;
+    margin: 0;
+    color: antiquewhite;
+}
+  
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
+    color: #333;
+    font-size: 24px;
+}
+</style>   
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

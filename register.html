@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device=width", initial="scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="stylereg.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <a href="index.html">
+                    <img src="Image/Logowhite.png" class="logo">
+                    </a>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Courses!</a></li>
+                        <li><a href="#">The Community</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+                <img src="Image/menu.png" class="menu-icon">
+            </div>
+        </header>
+        <div class="hero">
+            <div class="row">
+                <div class="col1">
+                    <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+                        <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+                    </div>
+                        <form id="Login" class="input-group">
+                        <p>User Id</p>
+                        <span>
+
+                        </span>
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <p>Password</p>
+                        <span>
+
+                        </span>
+                        <input type="text" class="input-field" placeholder="Password" required>
+                        <input type="checkbox" class="checkbox"><span>Remember Me</span>
+                        <button type="submit" class="submit-btn">Log in</button>
+                    </form>
+                        <form id="Register" class="input-group">
+                            <p>User Id</p>
+                            <Span>
+
+                            </Span>
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <p>Email Id</p>
+                            <Span>
+                                
+                            </Span>
+                        <input type="email" class="input-field" placeholder="Email Id" required>
+                        <p>Password </p>
+                            <Span>
+                                
+                            </Span>
+                        <input type="text" class="input-field" placeholder="Password" required>
+                        <input type="checkbox" class="checkbox"><span>I Agree To The Terams & Conditions</span>
+                        <button type="submit" class="submit-btn">Create Your Account</button>
+                    </form>
+                
+                    </div>
+                </div>
+                <div class="col2">
+                    <h2>Ready to Game Up?</h2>
+                    <h1>Welcome to Photo Gyan</h1>
+                    <p>Our website offers tutorials and information for learners of all levels. You'll get the essential tools and equipment to create impressive work quickly. We also provide locations and travel guides to the dreamlands of all photographers so that they can plan their shoots easily without any hassle. Also, we've covered the best platforms for earning money from your work for free.</p>
+                    
+                    <h2> Hit The Button Now</h2>
+
+                </div>
+            </div>
+            
+
+
+
+
+
+        </div>
+        
+
+        <footer>
+            <div class="footer-wrapper">
+              <div class="social-icons">
+                <a href="#"><img src="Image/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Image/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="Image/youtube.png" alt="YouTube"></a>
+              </div>
+              <p>&copy; Photogyan. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+
+        var x = document.getElementById("Login");
+        var y = document.getElementById("Register");
+        var z = document.getElementById("btn");
+
+        function Register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function Login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+
+    </script>
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
